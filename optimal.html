@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Optimal page replacement</title>
+	<style style="background-color: red;">
+	#ADV{
+		color: DARKBLUE;
+		background-color: lightgreen;<!DOCTYPE html>
+<html>
+<head>
+	<title>FIFO PAGE REPLACEMENT</title>
+	<style style="background-color: red;">
+	#ADV{
+		color: DARKBLUE;
+		background-color: LIGHTBLUE;
+		margin-top: 50PX;
+		padding: 71PX;
+		font-size: 20PX;
+		font-family: COURIER;
+		}
+	</style>
+</head>
+<body >
+
+
+<img src="https://scaler.com/topics/images/optimal-page-replacement-in-os.webp"  style="max-width: 40%;float: right;">
+<DIV ID="ADV" ><H1>Optimal Page Replacement in OS</H1>
+	
+	<p>Optimal page replacement is the best page replacement algorithm as this algorithm results in the least number of page faults. In this algorithm, the pages are replaced with the ones that will not be used for the longest duration of time in the future. In simple terms, the pages that will be referred farthest in the future are replaced in this algorithm.
+</p>
+
+<p>
+Let’s take the same page reference string 3, 1, 2, 1, 6, 5, 1, 3 with 3-page frames as we saw in FIFO. This also helps you understand how Optimal Page replacement works the best.
+	</p>
+	<p>Initially, all of the slots are empty so page faults occur at 3,1,2.
+Page faults = 3
+</p>
+<p>
+Initially, since all the slots are empty, pages 3, 1, 2 cause a page fault and take the empty slots.
+Page faults = 3
+</p>
+<p>
+When page 1 comes, it is in the memory and no page fault occurs.
+Page faults = 3
+</p>
+<p>
+When page 6 comes, it is not in the memory, so a page fault occurs and 2 is removed as it is not going to be used again.
+Page faults = 4
+</p>
+<p>
+When page 5 comes, it is also not in the memory and causes a page fault. Similar to above 6 is removed as it is not going to be used again.
+page faults = 5
+</p>
+<p>
+When page 1 and page 3 come, they are in the memory so no page fault occurs.
+Total page faults = 5</p>
+<hr>
+<H1>ADVANTAGES</H1>
+	<UL>
+		<LI>Excellent efficiency</LI>
+		<LI>Less complexity </LI>
+		<LI>Easy to use and understand</LI>
+		<LI>Simple data structures can be used to implement</LI>
+		
+</UL>
+<H1>DISADVANTAGES</H1>
+	<UL>
+		<LI>More time consuming</LI>
+		
+		<li>Difficult for error handling</li>
+		
+</UL>
+</DIV>
+
+</body>
+
+
+	
+	</style>
+</head>
+<body >
+
+
+
+</DIV>
+
+</body>
+
