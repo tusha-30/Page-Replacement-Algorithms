@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FIFO PAGE REPLACEMENT</title>
+	<style style="background-color: red;">
+	#ADV{
+		color: DARKBLUE;
+		background-color: LIGHTBLUE;
+		margin-top: 50PX;
+		padding: 71PX;
+		font-size: 20PX;
+		font-family: COURIER;
+		}
+	</style>
+</head>
+<body >
+
+
+<img src="https://scaler.com/topics/images/first-in-first-out-in-os.webp"  style="max-width: 40%;float: right;">
+<DIV ID="ADV" ><H1>FIFO</H1>
+	First In First Out (FIFO)
+	<p>FIFO algorithm is the simplest of all the page replacement algorithms. In this, we maintain a queue of all the pages that are in the memory currently. The oldest page in the memory is at the front-end of the queue and the most recent page is at the back or rear-end of the queue.
+</p>
+<p>Whenever a page fault occurs, the operating system looks at the front-end of the queue to know the page to be replaced by the newly requested page. It also adds this newly requested page at the rear-end and removes the oldest page from the front-end of the queue.
+</p>
+<p>
+Example: Consider the page reference string as 3, 1, 2, 1, 6, 5, 1, 3 with 3-page frames. Let’s try to find the number of page faults:
+	</p>
+	<p>Initially, all of the slots are empty so page faults occur at 3,1,2.
+Page faults = 3
+</p>
+<p>
+When page 1 comes, it is in the memory so no page fault occurs.
+Page faults = 3
+</p>
+<p>
+When page 6 comes, it is not present and a page fault occurs. Since there are no empty slots, we remove the front of the queue, i.e 3.
+Page faults = 4
+</p>
+<p>
+When page 5 comes, it is also not present and hence a page fault occurs. The front of the queue i.e 1 is removed.
+Page faults = 5
+</p>
+<p>
+When page 1 comes, it is not found in memory and again a page fault occurs. The front of the queue i.e 2 is removed.
+Page faults = 6
+</p>
+<p>
+When page 3 comes, it is again not found in memory, a page fault occurs, and page 6 is removed being on top of the queue
+Total page faults = 7</p>
+<hr>
+<H1>ADVANTAGES</H1>
+	<UL>
+		<LI>Simple to understand and implement</LI>
+		<LI>Does not cause more overhead </LI>
+		
+</UL>
+<H1>DISADVANTAGES</H1>
+	<UL>
+		<LI>Poor performance</LI>
+		<LI>Doesn’t use the frequency of the last used time and just simply replaces the oldest page.</LI>
+		<li>Suffers from Belady’s anomaly.</li>
+		
+</UL>
+</DIV>
+
+</body>
+
